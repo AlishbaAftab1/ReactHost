@@ -1,0 +1,195 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+.app {
+  width: 100%;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.logo {
+  font-family: cursive;
+}
+
+.nav-icons span {
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Layout */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Feed */
+.feed {
+  width: 60%;
+}
+
+/* Stories */
+.stories {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.story {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.story img {
+  border-radius: 50%;
+  border: 3px solid #ff416c;
+}
+
+/* Post */
+.post {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post-header img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.post-actions {
+  margin-top: 10px;
+}
+
+.post-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.likes {
+  font-weight: bold;
+}
+
+.comments {
+  margin-top: 5px;
+}
+
+.add-comment {
+  display: flex;
+  margin-top: 10px;
+}
+
+.add-comment input {
+  flex: 1;
+  padding: 5px;
+}
+
+.add-comment button {
+  padding: 5px 10px;
+  background: #ff416c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  margin-left: 20px;
+}
+
+.profile {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feed {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
